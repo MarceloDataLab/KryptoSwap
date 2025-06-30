@@ -3,3 +3,47 @@
     padding: 0;
     margin: 0;
 }
+
+/* Full HD 1440x1024 */
+@media (min-width: 1440px) {
+
+    header {
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+    }
+
+    nav {
+        width: 100vw;
+        height: 125px;
+        background-color: black;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 32px;
+        padding: 0px 40px;
+        align-items: center;
+    }
+    nav img {
+        grid-column: 2;
+        height: 100px;
+    }
+    nav #menu {
+        height: 100px;
+        background-color: grey;
+        grid-column: 8 / 12;
+        font-family: 'Oxanium';
+    }
+}
+
+/* Desktop 1280x800 */
+@media (max-width: 1439px) {
+    
+    header {
+        width: 100vw;
+        height: 100vh;
+        background-color: yellow;
+    }
+
+
+}
+
