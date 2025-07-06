@@ -7,6 +7,8 @@
 /* Full HD 1440x1024 */
 @media (min-width: 1440px) {
 
+    /* Header */
+
     header {
         width: 100vw;
         height: 100vh;
@@ -60,6 +62,77 @@
     #header-nav-icon {
         display: none;
     }
+
+    /* Hero */
+
+    .Hero {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("Resources/background_hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 10%;
+    
+    }
+
+    .hero-title {
+        
+        padding-top: 150px;
+        font-family: 'Orbitron', sans-serif; 
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+    }
+
+    .hero-sub {
+        color: #CCCCCC;
+        font-family: 'Oxanium';
+        text-align: center;
+        letter-spacing: 0.20em;
+        line-height: 30px;
+        font-size: 25px;
+        padding: 35px 0px;
+    }
+
+    .buttons-hero {
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .button-hero {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 20px;
+        padding: 25px 60px;
+        color: #ffffff;
+        border-radius: 25px;
+        text-decoration: none;
+        position: relative;
+        background: 
+            linear-gradient(#0B0B0C, #0B0B0C) padding-box,
+            linear-gradient(90deg, #FCE302, #00E0FF) border-box;
+        border: 2px solid transparent;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 0 6px rgba(0, 224, 255, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+
+    .button-hero:hover {
+        background: linear-gradient(90deg, #FCE302, #E1EB33, #00E0FF);
+        color: #0B0B0C;
+        font-weight: bold;
+        box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
+    }
+
 }
 
 /* Desktop 1280x800 */
@@ -119,6 +192,76 @@
     #header-nav-icon {
         display: none;
     }
+
+    /* Hero */
+
+    .Hero {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("Resources/background_hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 5%;
+    
+    }
+
+    .hero-title {
+        padding-top: 150px;
+        font-family: 'Orbitron', sans-serif; 
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+    }
+
+    .hero-sub {
+        color: #CCCCCC;
+        font-family: 'Oxanium';
+        text-align: center;
+        letter-spacing: 0.20em;
+        line-height: 30px;
+        font-size: 25px;
+        padding: 35px 0px;
+    }
+
+    .buttons-hero {
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+    
+    .button-hero {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 20px;
+        padding: 25px 60px;
+        color: #ffffff;
+        border-radius: 25px;
+        text-decoration: none;
+        position: relative;
+        background: 
+            linear-gradient(#0B0B0C, #0B0B0C) padding-box,
+            linear-gradient(90deg, #FCE302, #00E0FF) border-box;
+        border: 2px solid transparent;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 0 6px rgba(0, 224, 255, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+
+    .button-hero:hover {
+        background: linear-gradient(90deg, #FCE302, #E1EB33, #00E0FF);
+        color: #0B0B0C;
+        font-weight: bold;
+        box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
+    }
+
 }
 
 /* Tablet 768x1024 */
@@ -179,6 +322,75 @@
     #header-nav-icon {
         display: none;
     }
+
+        /* Hero */
+
+    .Hero {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("Resources/background_hero.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 5%;
+    
+    }
+
+    .hero-title {
+        padding-top: 150px;
+        font-family: 'Orbitron', sans-serif; 
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+    }
+
+    .hero-sub {
+        color: #CCCCCC;
+        font-family: 'Oxanium';
+        text-align: center;
+        letter-spacing: 0.20em;
+        line-height: 30px;
+        font-size: 25px;
+        padding: 35px 0px;
+    }
+
+    .buttons-hero {
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+    
+    .button-hero {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 20px;
+        padding: 25px 60px;
+        color: #ffffff;
+        border-radius: 25px;
+        text-decoration: none;
+        position: relative;
+        background: 
+            linear-gradient(#0B0B0C, #0B0B0C) padding-box,
+            linear-gradient(90deg, #FCE302, #00E0FF) border-box;
+        border: 2px solid transparent;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 0 6px rgba(0, 224, 255, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+
+    .button-hero:hover {
+        background: linear-gradient(90deg, #FCE302, #E1EB33, #00E0FF);
+        color: #0B0B0C;
+        font-weight: bold;
+        box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
+    }
 }
 
 /* Smartphone 360×640 */
@@ -214,7 +426,7 @@
         top: 50%;
         right: 16px;
         transform: translateY(-50%);
-        height: 50px;
+        height: 40px;
     }
 }
 
