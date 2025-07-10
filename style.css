@@ -133,6 +133,19 @@
         box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
     }
 
+    /* Features */
+
+    .Features {
+        background-image: url("Resources/background_pages.png");
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: 0px 40px;
+        gap: 32px;
+    }
+
+    
 }
 
 /* Desktop 1280x800 */
@@ -267,7 +280,7 @@
 /* Tablet 768x1024 */
 @media (min-width: 768px) and (max-width: 1279px) {
 
-     header {
+    header {
         width: 100vw;
         height: 100vh;
         background-color: black;
@@ -331,7 +344,7 @@
         background-image: url("Resources/background_hero.png");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center 100px;
+        background-position: center 75px;
     
     }
 
