@@ -76,9 +76,8 @@
     }
 
     .hero-title {
-        
         padding-top: 150px;
-        font-family: 'Orbitron', sans-serif; 
+        font-family: 'Orbitron';
         font-weight: 500;
         font-size: 48px;
         line-height: 60px;
@@ -139,13 +138,58 @@
         background-image: url("Resources/background_pages.png");
         width: 100vw;
         height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        padding: 0px 40px;
-        gap: 32px;
+        display: flexbox;
     }
 
+    .header-features {
+        width: 100vw;
+        height: 120px;
+    }
     
+    .header-features h1 {
+        padding: 25px;
+        font-family: 'Orbitron';
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 60px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+    }
+
+    .body-features {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .body-feature {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-feature img {
+        width: 400px;
+        height: 600px;
+    }
+
+    .body-feature p {
+        color: #CCCCCC;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Oxanium';
+        padding: 25px;
+        max-width: 500px;
+        line-height: 1.5;
+    }
 }
 
 /* Desktop 1280x800 */
