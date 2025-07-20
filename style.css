@@ -37,7 +37,7 @@ body {
 
     nav #logo-header {
         grid-column: 2;
-        height: 65px;
+        height: 50px;
         object-fit: contain;
     }
 
@@ -77,18 +77,27 @@ body {
     .Hero {
         width: 100vw;
         min-height: calc(100vh - 80px);
-        padding-bottom: 60px;
         background-image: url("Resources/background_hero.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #hero-content {
+        transform: translateY(-60px);
+        background-color: rgba(0, 0, 0, 0.4)
     }
 
     .hero-title {
-        padding-top: 150px; 
+        padding: 20px;
         font-family: 'Orbitron';
         font-weight: 500;
-        font-size: 48px;
+        font-size: clamp(48px, 3vw, 96px);
         line-height: 60px;
         letter-spacing: 0.15em;
         text-align: center;
@@ -106,7 +115,7 @@ body {
         text-align: center;
         letter-spacing: 0.20em;
         line-height: 30px;
-        font-size: 25px;
+        font-size: clamp(25px, 1vw, 50px);
         padding: 35px 0px;
     }
 
@@ -146,7 +155,7 @@ body {
 
     .Features {
         background-image: url("Resources/background_pages.png");
-        min-height: calc(100vh - 80px);
+        min-height: calc(100vh - 120px);
         width: 100vw;
         padding: 0px 20px;
         display: flex;
@@ -240,8 +249,12 @@ body {
     }
 
     .site-explain {
+        padding: 0px 50px;
         grid-column: 2;
-        border: 1px solid yellowgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .site-explain h1 {
@@ -269,6 +282,61 @@ body {
         line-height: 1.5;
     }
 
+    /* 4 - clients */
+
+    .clients {
+        background-image: url("Resources/background_pages.png");
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .clients img {
+        max-width: 500px;
+        max-height: 500px;
+    }
+
+    .clients-reviews {
+        display: flex;
+        grid-column: 2;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .clients-explain {
+        padding: 0px 50px;
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .clients-explain h1 {
+        font-family: 'Orbitron';
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 60px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+    }
+
+    .clients-explain p {
+        color: #CCCCCC;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Oxanium';
+        padding: 25px;
+        max-width: 600px;
+        line-height: 1.5;
+    }
 }
 
 /* Desktop 1280x800 */
