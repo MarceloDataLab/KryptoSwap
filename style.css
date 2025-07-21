@@ -337,6 +337,65 @@ body {
         max-width: 600px;
         line-height: 1.5;
     }
+
+    /* 5 - Newsletter & Foooter */
+
+    .Email {
+        background-image: url("Resources/background_pages.png");
+        min-height: calc(100vh - 200px);
+    }
+
+    .newsletter-form {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .newsletter-form input[type="email"] {
+        flex: 1 1 250px;
+        max-width: 400px;
+        padding: 0.75rem 1rem;
+        border: 2px solid #FCE302;
+        border-radius: 25px;
+        background: transparent;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .newsletter-form input::placeholder {
+        color: #888;
+    }
+
+    .newsletter-form button {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 20px;
+        padding: 25px 60px;
+        color: #ffffff;
+        border-radius: 25px;
+        text-decoration: none;
+        position: relative;
+        background: 
+            linear-gradient(#0B0B0C, #0B0B0C) padding-box,
+            linear-gradient(90deg, #FCE302, #00E0FF) border-box;
+        border: 2px solid transparent;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 0 6px rgba(0, 224, 255, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+
+    .newsletter-form button:hover {
+        background: linear-gradient(90deg, #FCE302, #E1EB33, #00E0FF);
+        color: #0B0B0C;
+        font-weight: bold;
+        box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
+    }
+
+    footer {
+        height: 200px;
+        background-color: #0B0B0C;
+        border: 1px solid red;
+    }
 }
 
 /* Desktop 1280x800 */
