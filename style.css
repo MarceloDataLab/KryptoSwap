@@ -155,7 +155,7 @@ body {
 
     .Features {
         background-image: url("Resources/background_pages.png");
-        min-height: calc(100vh - 120px);
+        min-height: 100vh;
         width: 100vw;
         padding: 0px 20px;
         display: flex;
@@ -168,7 +168,7 @@ body {
         align-items: center;
         justify-content: center;
         width: 100vw;
-        height: 120px;
+        height: 220px;
     }
     
     .header-features h1 {
@@ -259,7 +259,7 @@ body {
 
     .site-explain h1 {
         font-family: 'Orbitron';
-        font-weight: 500;
+        font-weight: 50px;
         font-size: 42px;
         line-height: 60px;
         letter-spacing: 0.15em;
@@ -315,7 +315,7 @@ body {
 
     .clients-explain h1 {
         font-family: 'Orbitron';
-        font-weight: 500;
+        font-weight: 50px;
         font-size: 42px;
         line-height: 60px;
         letter-spacing: 0.15em;
@@ -343,13 +343,38 @@ body {
     .Email {
         background-image: url("Resources/background_pages.png");
         min-height: calc(100vh - 200px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Email h1 {
+        color: #FCE302;
+        font-family: 500px;
+        letter-spacing: 0.15em;
+        font-family: 'Orbitron';
+        line-height: 60px;
+        text-align: center;
+        font-size: 42px;
+        margin: 5px;
+    }
+    .Email p {
+        color: #CCCCCC;
+        font-size: 25px;
+        font-family: 'Oxanium';
+        max-width: 600px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 15px;
     }
 
     .newsletter-form {
         display: flex;
         justify-content: center;
         gap: 1rem;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        margin: 50px;
     }
 
     .newsletter-form input[type="email"] {
@@ -396,6 +421,7 @@ body {
         background-color: #0B0B0C;
         border: 1px solid red;
     }
+
 }
 
 /* Desktop 1280x800 */
