@@ -338,7 +338,7 @@ body {
         line-height: 1.5;
     }
 
-    /* 5 - Newsletter & Foooter */
+    /* 5 - Newsletter */
 
     .Email {
         background-image: url("Resources/background_pages.png");
@@ -415,14 +415,65 @@ body {
         font-weight: bold;
         box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
     }
+    
+    /* 6 - Footer */
 
     footer {
+        width: 100vw;
         height: 200px;
         background-color: #0B0B0C;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         gap: 32px;
-        margin: 0px 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        height: 100px;
+    }
+
+    #footer-nav {
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Oxanium';
+        font-size: 20px;
+    }
+
+    #footer-nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footer-nav ul li {
+        margin: 0 20px;
+        letter-spacing: 2px;
+        list-style: none;
+    }
+
+    #footer-nav ul li a {
+        color: white;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .social-media {
+        grid-column: 3;
+    }
+
+    .social-media img {
+        height: 75px;
+        width: 75px;
+        margin: 5px;
     }
 
 }
