@@ -231,26 +231,25 @@ body {
     .Site {
         background-image: url("Resources/background_pages.png");
         min-height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 75px;
+        padding: 50px;
     }
 
     .Site img {
         max-width: 800px;
         max-height: 800px;
-        padding: 20px;
     }
 
     .site-img {
         display: flex;
-        grid-column: 1;
         justify-content: center;
         align-items: center;
     }
 
     .site-explain {
-        padding: 0px 50px;
-        grid-column: 2;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -258,6 +257,8 @@ body {
     }
 
     .site-explain h1 {
+        margin: 25px;
+        max-width: 700px;
         font-family: 'Orbitron';
         font-weight: 50px;
         font-size: 42px;
@@ -273,12 +274,12 @@ body {
     }
     
     .site-explain p {
+        margin: 25px;
         color: #CCCCCC;
-        text-align: center;
+        text-align: justify;
         font-size: 25px;
         font-family: 'Oxanium';
-        padding: 25px;
-        max-width: 600px;
+        max-width: 700px;
         line-height: 1.5;
     }
 
@@ -287,8 +288,10 @@ body {
     .clients {
         background-image: url("Resources/background_pages.png");
         min-height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
     }
 
     .clients img {
@@ -298,15 +301,13 @@ body {
 
     .clients-reviews {
         display: flex;
-        grid-column: 2;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
     .clients-explain {
-        padding: 0px 50px;
-        grid-column: 1;
+        max-width: 800px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -325,16 +326,17 @@ body {
         background-clip: text;
         -webkit-text-fill-color: transparent;
         color: transparent;
-        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1); 
+        margin: 25px;
     }
 
     .clients-explain p {
+        margin: 25px;
         color: #CCCCCC;
-        text-align: center;
+        text-align: justify;
         font-size: 25px;
         font-family: 'Oxanium';
-        padding: 25px;
-        max-width: 600px;
+        max-width: 800px;
         line-height: 1.5;
     }
 
@@ -437,7 +439,7 @@ body {
     }
 
     .footer-logo img {
-        height: 100px;
+        height: 85px;
     }
 
     #footer-nav {
@@ -471,8 +473,8 @@ body {
     }
 
     .social-media img {
-        height: 75px;
-        width: 75px;
+        height: 55px;
+        width: 55px;
         margin: 5px;
     }
 
