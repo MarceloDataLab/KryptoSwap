@@ -1438,14 +1438,14 @@ body {
 
     nav {
         width: 100vw;
-        height: 70px;
+        height: 80px;
         background-color: black;
         position: relative;
     }    
 
     nav #logo-header {
         position: absolute;
-        height: 60px;
+        height: 50px;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -1465,21 +1465,28 @@ body {
 
     .Hero {
         width: 100vw;
-        height: 100vh;
-        background-image: url("Resources/background_hero.png");
+        min-height: calc(100vh - 80px);
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4), 
+            rgba(0, 0, 0, 0.4)
+        ), url("Resources/crypto.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center 100px;
+        background-position: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     
     }
 
     .hero-title {
-        padding: 100px 50px 0px;
+        padding: 20px;
         font-family: 'Orbitron', sans-serif; 
-        font-weight: 500;
-        font-size: 38px;
-        line-height: 60px;
-        letter-spacing: 0.15em;
+        font-weight: 500px;
+        font-size: clamp(25px, 3vw, 50px);
+        line-height: 40px;
+        letter-spacing: 0.1em;
         text-align: center;
         background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
         -webkit-background-clip: text;
@@ -1496,7 +1503,7 @@ body {
         letter-spacing: 0.20em;
         line-height: 30px;
         font-size: 15px;
-        padding: 30px 0px;
+        padding: 0px 30px;
     }
 
     .buttons-hero {
@@ -1510,10 +1517,10 @@ body {
     
     .button-hero {
         text-align: center;
-        width: 210px;
+        width: 180px;
         font-family: 'Orbitron', sans-serif;
-        font-size: 20px;
-        padding: 25px 60px;
+        font-size: 15px;
+        padding: 25px;
         color: #ffffff;
         border-radius: 25px;
         text-decoration: none;
@@ -1533,5 +1540,80 @@ body {
         font-weight: bold;
         box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
     }
+
+    /* 2 - Features */
+
+    .Features {
+        background-image: url("Resources/background_pages.png");
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-features {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 80px;
+    }
+    
+    .header-features h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        font-family: 'Orbitron';
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+    }
+
+    .body-features {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        padding: 0px 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .body-feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 450px;
+        flex-direction: row;
+    }
+
+    .body-feature img {
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+        align-self: stretch
+    }
+
+    .body-feature p {
+        color: #CCCCCC;
+        text-align: justify;
+        font-size: 12px;
+        font-family: 'Oxanium';
+        max-width: 500px;
+        line-height: 1.5;
+    }
+
 }
 
