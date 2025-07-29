@@ -1615,5 +1615,267 @@ body {
         line-height: 1.5;
     }
 
+     /* 3 - Site */
+
+    .Site {
+        background-image: url("Resources/background_pages.png");
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+    }
+
+    .Site img {
+        max-width: 600px;
+        max-height: 450px;
+    }
+
+    .site-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    .site-explain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .site-explain h1 {
+        margin: 25px;
+        max-width: 750px;
+        font-family: 'Orbitron';
+        font-weight: 500px;
+        font-size: 25px;
+        line-height: 40px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1);  
+    }
+
+    .site-explain p {
+        color: #CCCCCC;
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Oxanium';
+        max-width: 700px;
+        line-height: 1.5;
+        padding: 0px 20px;
+    }
+
+    /* 4 - clients */
+
+    .clients {
+        background-image: url("Resources/background_pages.png");
+        min-height: 100vh;
+        display: flex;
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .clients img {
+        max-width: 350px;
+        max-height: 300px;
+    }
+
+    .clients-reviews {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .clients-explain {
+        max-width: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .clients-explain h1 {
+        font-family: 'Orbitron';
+        font-weight: 500px;
+        font-size: 25px;
+        line-height: 40px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        background: linear-gradient(90deg, #FCE302 0%, #E1EB33 38%, #00E0FF 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.1); 
+        margin: 25px;
+    }
+
+    .clients-explain p {
+        padding: 0px 20px;
+        color: #CCCCCC;
+        text-align: justify;
+        font-size: 15px;
+        font-family: 'Oxanium';
+        max-width: 700px;
+        line-height: 1.5;
+    }
+
+    /* 5 - Newsletter */
+
+    .Email {
+        background-image: url("Resources/background_pages.png");
+        min-height: calc(100vh - 150px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Email h1 {
+        color: #FCE302;
+        letter-spacing: 0.15em;
+        font-family: 'Orbitron';
+        line-height: 40px;
+        text-align: center;
+        font-size: 25px;
+        margin: 20px;
+        max-width: 700px;
+    }
+
+    .Email p {
+        color: #CCCCCC;
+        font-size: 20px;
+        font-family: 'Oxanium';
+        max-width: 700px;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0px 30px;
+    }
+
+    .newsletter-form {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 50px;
+    }
+
+    .newsletter-form input[type="email"] {
+        flex: 1 1 250px;
+        max-width: 300px;
+        padding: 0.75rem 1rem;
+        border: 2px solid #FCE302;
+        border-radius: 25px;
+        background: transparent;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .newsletter-form input::placeholder {
+        color: #888;
+    }
+
+    .newsletter-form button {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 15px;
+        padding: 15px 30px;
+        color: #ffffff;
+        border-radius: 25px;
+        text-decoration: none;
+        position: relative;
+        background: 
+            linear-gradient(#0B0B0C, #0B0B0C) padding-box,
+            linear-gradient(90deg, #FCE302, #00E0FF) border-box;
+        border: 2px solid transparent;
+        background-clip: padding-box, border-box;
+        box-shadow: 0 0 6px rgba(0, 224, 255, 0.3);
+        transition: 0.3s ease-in-out;
+    }
+
+    .newsletter-form button:hover {
+        background: linear-gradient(90deg, #FCE302, #E1EB33, #00E0FF);
+        color: #0B0B0C;
+        font-weight: bold;
+        box-shadow: 0 0 20px #00e0ff, 0 0 40px #fce302;
+    }
+
+    /* 6 - Footer */
+
+    footer {
+        width: 100vw;
+        height: 150px;
+        background-color: #0B0B0C;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 25px;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo img {
+        height: 55px;
+    }
+
+    #footer-nav {
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Oxanium';
+        font-size: 15px;
+    }
+
+    #footer-nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #footer-nav ul li {
+        letter-spacing: 2px;
+        list-style: none;
+        margin: 0px 10px;
+    }
+
+    #footer-nav ul li a {
+        display: flex;
+        color: white;
+        text-decoration: none;
+        white-space: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .social-media {
+        display: flex;
+        grid-column: 3;
+        flex-direction: row;
+    }
+
+    .social-media img {
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
+
+
 }
 
