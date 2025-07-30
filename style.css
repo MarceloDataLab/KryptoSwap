@@ -1816,58 +1816,51 @@ body {
     footer {
         width: 100vw;
         height: 150px;
+        display: flex;
         background-color: #0B0B0C;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
         justify-content: center;
         align-items: center;
-        padding: 0px 25px;
+        flex-direction: column;
     }
 
     .footer-logo {
-        grid-column: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
     }
 
-    .footer-logo img {
-        height: 55px;
-    }
 
     #footer-nav {
-        grid-column: 2;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: 'Oxanium';
-        font-size: 15px;
+        font-size: clamp(10px, 4vw, 25px);
     }
 
     #footer-nav ul {
         display: flex;
         flex-direction: row;
+        margin: 10px;
     }
 
     #footer-nav ul li {
         letter-spacing: 2px;
         list-style: none;
-        margin: 0px 10px;
+        margin: 10px;
     }
 
     #footer-nav ul li a {
         display: flex;
         color: white;
         text-decoration: none;
-        white-space: wrap;
+        white-space: nowrap;
         text-align: center;
         justify-content: center;
     }
 
     .social-media {
         display: flex;
-        grid-column: 3;
         flex-direction: row;
+        padding: 10px;
     }
 
     .social-media img {
