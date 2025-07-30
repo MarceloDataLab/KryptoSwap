@@ -60,8 +60,7 @@ Construir uma landing page atrativa e funcional para a fictícia **KryptoSwap**,
 
 ## 🔗 Deploy
 
-> [https://USERNAME.github.io/kryptoswap-landing](https://USERNAME.github.io/kryptoswap-landing)  
-> 🧠 Substitui `USERNAME` pelo teu user do GitHub.
+> [https://marcelodatalab.github.io/KryptoSwap/](https://marcelodatalab.github.io/KryptoSwap/)
 
 ---
 
